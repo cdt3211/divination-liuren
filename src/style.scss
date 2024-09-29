@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'kai';
+  src: url(../public/cangerjinkai.ttf) format('truetype');
+}
+
+* {
+  font-family: 'kai' !important;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  .footer {
+    width: 350px;
+    padding: 0;
+    height: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+
+    p {
+      margin: 0;
+      color: rgb(2, 2, 2);
+      line-height: 20px;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import LiurenDivination from "./components/xiaoLiuRen";
 import './style.scss';
 import { Layout, Typography } from 'antd';
+import { op } from './utils/op';
+import { useEffect } from "react";
 
 const { Link } = Typography;
 
@@ -9,7 +11,9 @@ const { Link } = Typography;
 const { Footer, Content } = Layout;
 
 function App() {
-
+  useEffect(() => {
+    op.trackPageView();
+  }, []);
   return (
     <Layout className="app">
       {/* <Header className="header"></Header> */}
